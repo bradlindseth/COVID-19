@@ -1,0 +1,13 @@
+Coefficient,Name,Type,Fixed?,Pegged?,Low,High,Tolerance,Space
+E,Exposed Compartment,Int,FALSE,TRUE,2000,48000,100,linspace
+I,Infectious Compartment,Int,FALSE,FALSE,4000,200000,100,linspace
+R,Recovered Compartment,Int,FALSE,FALSE,3000000,4000000,100,linspace
+gamma,Infection Recovery Rate,Float,FALSE,FALSE,0.06,0.09,0.005,linspace
+epsilon,Infection Incubation Rate,Float,FALSE,FALSE,0.27,0.3,0.005,linspace
+delta,Recovery Immunity Loss Rate,Float,FALSE,FALSE,0.00025,0.01,0.001,geomspace
+beta,Infection Transmission Rate,Float,FALSE,FALSE,0.6,1.2,0.005,linspace
+alpha,Hospitalization Rate,Float,FALSE,FALSE,0.00005,0.0005,0.00005,linspace
+phi,Hospitalization Removal Rate,Float,FALSE,FALSE,0.025,0.1,0.001,linspace
+Lambda,Birth Rate,Float,TRUE,FALSE,134,134,0,
+eta,Non-Infection Fatality Rate,Float,TRUE,FALSE,0.000016,0.000016,0,
+zeta,Hospitalization Fatality Rate,Float,TRUE,FALSE,0.0091,0.027,0,
